@@ -1,51 +1,43 @@
 fun main(){
-    word()
-    sum(15,20,25)
-    multiply(25,5,10)
-    me()
-    world()
-    future()
+    String()
+    nameage()
+    length()
+    ifelse("Catherine Kilonzi")
+
 }
-//write a function that takes in your full name and add a space before your first name  and after your last
-// name,return and trim the spacebefore your first name
-fun word(){
+/*Given a String "AkiraChix".Write a function that prints out a String composed of the first,third and
+fourth characters of the String*/
+fun String(){
+    var name = "AkiraChix"
+    println(name[1].toString()+name[3]+name[4])
+
+
+}
+/*Write a function that takes in 2 parameter's,name and age and return a String with this structure "Hi,my
+name x and i am y years old"*/
+fun nameage(){
     var name = "Catherine"
-    var last = "Kilonzi"
-    var fullname =name+" "+last
-    println(fullname)
-}
-//write a function that takes in 3 numbers and returns the sum of all the 3 numbers
-fun sum(a:Int,b:Int,c:Int){
-    var add = a+b+c
-    println(add)
-
-}
-//write a function that takes in 3 numbers and returns the multiplication of all the 3 numbers
-fun multiply(a:Int,b:Int,c:Int){
-    var multiple = a*b*c
-    println(multiple)
-
-}
-// write a function that takes in the current year and your birth and prints your current age.
-fun me(){
-    var year = 2022
-    var birth = 2002
-    var age = year-birth
-    println(age)
-}
-//write a function that takes  in a statement that says "I am 20 years old"
-fun world(){
-    var statement = "I am 20 years old"
+    var age = 20
+    var statement = "Hi,my name is $name and am $age years old"
     println(statement)
 }
-/*write a function that takes in two statements.In the first statement replace the ceo to manager and for the
-second statement make the statement upper case.*/
-fun future(){
-    var statement = "Mellisa is a ceo of jumia online market and lives in Europe"
-    println(statement.replace("ceo","manager"))
-    var statement2 = "The head director of Simba cement located in Africa"
-    println(statement2.uppercase())
+/*Write a function that takes in a String and returns its length*/
+fun length(){
+    var name = "AkiraChix"
+    println(name.length)
 }
+/*Write a function that takes in a name and prints out "That's me!"when your name is passed to it,otherwise
+it prints"I don't know who that is"*/
+
+fun ifelse(name:String){
+    if(name=="Catherine Kilonzi"){
+        println("That's me!")}
+    else
+        println("I don't know who that is")
+}
+
+
+
 
 
 
