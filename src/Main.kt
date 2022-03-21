@@ -1,11 +1,5 @@
 fun main(){
-    var come = String("AkiraChix")
-    println (come)
-    var word = nameage("Catherine Kanini",20)
-    println(word)
-    var greet = length("AkiraChix")
-    println(greet)
-    ifelse("Catherine Kilonzi")
+    
 
 }
 /*Given a String "AkiraChix".Write a function that prints out a String composed of the first,third and
